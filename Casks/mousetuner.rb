@@ -2,8 +2,7 @@ cask "mousetuner" do
   version "0.1.1"
   sha256 "2f01dc30d23e7227cc61330d7c987273ee532dd6553bbb31c86d59fb2eef2681"
 
-  url "https://github.com/mousetuner/mousetuner/releases/download/v0.1.1/MouseTuner-#{version}.zip",
-      verified: "github.com/mousetuner/mousetuner/releases/download/v0.1.1/"
+  url "https://github.com/mousetuner/mousetuner/releases/download/v0.1.1/MouseTuner-#{version}.zip"
   name "MouseTuner"
   desc "Smooth scrolling, button mapping and Logitech HID++ control for third-party mice"
   homepage "https://github.com/mousetuner/mousetuner"
@@ -17,8 +16,8 @@ cask "mousetuner" do
   auto_updates true
 
   # ADR-0001：最低支持 macOS 13.3。cask 只能按大版本卡，13.0–13.2 会被放进来，
-  # 由应用自己的 LSMinimumSystemVersion 拦住。
-  depends_on macos: ">= :ventura"
+  # 由应用自己的 LSMinimumSystemVersion 拦住。符号写法本身就是「该版本及以上」。
+  depends_on macos: :ventura
 
   app "MouseTuner.app"
 
