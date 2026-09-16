@@ -1,8 +1,8 @@
 cask "mousetuner" do
-  version "0.2.1"
-  sha256 "3b7288ded5e589732286ed73dcfd883fb868bd75184b03d67c8f38b4e1c7e0e1"
+  version "0.3.0"
+  sha256 "95fd2df0277005aebcadc26364a328e5f74ca463a8cd35b36f130dc5aa19c101"
 
-  url "https://github.com/mousetuner/mousetuner/releases/download/v0.2.1/MouseTuner-#{version}.zip"
+  url "https://github.com/mousetuner/mousetuner/releases/download/v0.3.0/MouseTuner-#{version}.zip"
   name "MouseTuner"
   desc "Smooth scrolling, button mapping and Logitech HID++ control for third-party mice"
   homepage "https://github.com/mousetuner/mousetuner"
